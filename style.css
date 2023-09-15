@@ -6,11 +6,6 @@ html {
     overflow-x: hidden;
 }
 
-.wrapper {
-    /* display: grid;
-    grid-template-rows: 80px 1fr 160px; */
-}
-
 .header {
     position: relative;
     width: 100%;
@@ -60,21 +55,6 @@ button {
     margin-right: 25px;
 }
 
-/* .button-header  {
-    padding: 10px 18px;
-    border-radius: 50px;
-    background: linear-gradient(90deg, #31D35C 0%, #2BB7DB 100%);
-    border: none;
-    color: #FFF;
-    font-family: Public Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 18.2px;
-    cursor: pointer;
-    margin-right: 25px;
-    
-} */
 
 .button-header a{
     text-decoration: none;
@@ -92,6 +72,12 @@ button {
 .hero-img-block img{
     width: 728.64px;
     height: 625.31px;
+}
+
+.header-hamburger-div {
+    display: none;
+    margin-right: 25px;
+    z-index: 10001;
 }
 
 .h1 {
@@ -672,6 +658,13 @@ margin-top: 10px;
                 text-decoration: none;
                 color: #FFF;
             }
+
+            .hero-img-block-mobile {
+                display: none;
+
+            }
+
+
 
 
             
