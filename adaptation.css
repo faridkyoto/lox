@@ -1,4 +1,10 @@
 @media screen and (max-width: 390px) {
+
+    body,
+    html {
+        font-family: Public Sans;
+    }
+
     .links {
         position: absolute;
         top: 100%;
@@ -119,7 +125,7 @@
 .feature-content-text-second {
 display: flex;
 width: 17.98625rem;
-height: 3.625rem;
+height: 3.625rem; 
 flex-direction: column;
 justify-content: center;
 flex-shrink: 0;
@@ -131,6 +137,7 @@ font-style: normal;
 font-weight: 300;
 line-height: 1.3125rem; 
 }
+
 
 .icons-feature-content {
     display: block;
@@ -168,7 +175,7 @@ line-height: 1.3125rem;
 }
 
 .section-features {
-    height: 1227px;
+    height: 87rem;
     padding: 0px 0px;
 }
 
@@ -213,17 +220,25 @@ line-height: 1.3125rem;
 }
 
 .article-items {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .section-articles {
     height: 1741px;
+    max-width: 1000px;
+
 }
 
 .article-item-one {
     width: 339px;
-    height: 392.27px;
+    height: 392px;
+    padding: 20px 50px 20px 50px;
 }
+
 
 .article-item-one-textblock-one {
 display: flex;
@@ -242,12 +257,12 @@ justify-content: center;
 }
 
 .article-item-img img{
-    width: 339px;
+width: 342px;
 }
 
 .article-item-two {
     width: 339px;
-    height: 392.27px;
+    height: 392px;
 }
 
 .article-item-two-textblock-one {
@@ -273,7 +288,7 @@ justify-content: center;
 
 .article-item-three {
     width: 339px;
-    height: 392.27px;
+    height: 392px;
 }
 
 .article-item-three-textblock-one {
@@ -298,7 +313,7 @@ justify-content: center;
 
 .article-item-four {
     width: 339px;
-    height: 392.27px;
+    height: 392px;
 }
 
 .article-item-four-textblock-one {
@@ -374,3 +389,236 @@ height: 39rem;
 }
 
 }
+
+   @media screen and (max-width: 1200px) {
+    .hero-img-block img{
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+    }
+
+
+    .h1 {
+        width: 300px; 
+        font-size: 35px;
+        transition: 0.5s;
+    }
+
+    .p {
+        width: 300px; 
+        font-size: 13px;
+        transition: 0.5s;
+        line-height: 22px;
+    }
+
+    button {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1000px;
+    }
+
+    .container-second {
+        max-width: 1000px;
+    }
+
+    .feature-content-text {
+        font-size: 30px;
+    }
+
+    .feature-content-text-second {
+        font-size: 13px;
+        width: 17rem;
+        margin-top: 16px;
+    }
+
+    .online-banking {
+        font-size: 19px;
+        margin-top: 30px;
+    }
+
+    .simple-budgeting {
+        font-size: 19px;
+        margin-top: 30px;
+    }
+
+    .fast-onboarding {
+        font-size: 19px;
+        margin-top: 30px;
+    }
+
+    .open-api {
+        font-size: 19px;
+        margin-top: 30px;
+    }
+
+    .feature-description-one {
+        font-size: 11px;
+        width: 197px;
+    }
+
+    .feature-description-two {
+        font-size: 11px;
+        width: 186px;
+    }
+
+    .feature-description-three {
+        font-size: 11px;
+        width: 197px;
+    }
+
+    .feature-description-four {
+        font-size: 11px;
+        width: 197px;
+    }
+
+    .icon-online-svg {
+        transform: scale(0.9)
+    }
+
+    .icon-budgeting-svg {
+        transform: scale(0.9)
+    }
+
+    .icon-onboarding-svg {
+        transform: scale(0.9)
+    }
+
+    .icon-api-svg {
+        transform: scale(0.9)
+    }
+
+    .latest-articles {
+        font-size: 30px;
+    }
+    
+    .container-third {
+        max-width: 1000px;
+    }
+
+    .article-item-one {
+        width: 223px;
+        height: 383px;
+    }
+
+    .article-item-img img {
+        width: 223px;
+        height: 200px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .article-item-one-textblock-one {
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 7px;
+    }
+
+    .article-item-one-textblock-two {
+        font-size: 11px;
+        line-height: 15px;
+        margin-top: 1px;
+        width: 162px;
+    }
+
+    .article-item-one-claire-robinson {
+        margin-top: 23px;
+    }
+
+
+
+
+
+    .article-item-two {
+        width: 223px;
+        height: 383px;
+    }
+
+    .article-item-img-two img {
+        width: 223px;
+        height: 200px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .article-item-two-textblock-one {
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 7px;
+        width: 180px;
+    }
+
+    .article-item-two-textblock-two {
+        font-size: 11px;
+        line-height: 15px;
+        margin-top: 1px;
+        width: 162px;
+    }
+
+    .article-item-two-wilson-hutton {
+        margin-top: 23px;
+    }
+
+
+
+
+    .article-item-three {
+        width: 223px;
+        height: 383px;
+    }
+
+    .article-item-img-three img {
+        width: 223px;
+        height: 200px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .article-item-three-textblock-one {
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 7px;
+        width: 145px;
+    }
+
+    .article-item-three-textblock-two {
+        font-size: 11px;
+        line-height: 15px;
+        margin-top: 1px;
+        width: 162px;
+    }
+
+    .article-item-three-wilson-hutton {
+        margin-top: 23px;
+    }
+
+
+
+
+
+    .article-item-four {
+        width: 223px;
+        height: 383px;
+    }
+
+    .article-item-img-four img {
+        width: 223px;
+        height: 200px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .article-item-four-textblock-one {
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 7px;
+        width: 180px;
+    }
+
+    .article-item-four-textblock-two {
+        font-size: 11px;
+        line-height: 15px;
+        margin-top: 1px;
+        width: 162px;
+    }
+
+    .article-item-four-claise-robinson {
+        margin-top: 23px;
+    }
+}    
