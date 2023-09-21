@@ -1,7 +1,6 @@
+const hamburgerDiv = document.querySelector(".header-hamburger-div");
+const links = document.querySelector(".header-links");
 
-    const hamburgerDiv = document.querySelector(".header-hamburger-div");
-    const links = document.querySelector(".links");
-
-    hamburgerDiv.addEventListener("click", function () {
-        links.classList.toggle("open");
-    });
+hamburgerDiv.addEventListener("click", function () {
+  links.classList.toggle("open");
+});
