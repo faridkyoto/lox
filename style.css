@@ -1,62 +1,370 @@
 body,
 html {
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     font-family: Public Sans;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .header {
     position: relative;
     width: 100%;
-    height: 80.19px;
+    height: 80px;
     background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 999;
+}
+
+.wrapper {
+    flex-grow: 1;
+}
+
+.header-logo {
+    margin-left: 25px;
 }
 
 
-
-.container {
+.section-hero {
     max-width: 1110px;
     margin: 0 auto;
 }
 
-.links {
+.header-links {
     display: flex;
     gap: 31px;
     align-items: center;
-
 }
 
-.links a {
+.header-links a {
     color: #9698A6;
-    font-family: Public Sans;
     text-decoration: none;
     font-weight: bold;
 }
 
-.button-header {
-    display: inline-flex;
-    padding: 6.5px 18px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+button {
+    padding: 10px 18px;
     border-radius: 50px;
     background: linear-gradient(90deg, #31D35C 0%, #2BB7DB 100%);
     border: none;
     color: #FFF;
     font-family: Public Sans;
-    font-size: 14px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: bold;
-    line-height: 18.2px;
+    line-height: 18px;
     cursor: pointer;
+    margin-right: 25px;
 }
 
-.h1 {
-    color: #2D314D;
-    margin-top: 173px;
-    font-size: 52px;
-    font-weight: 300;
+
+.button-header a {
+    text-decoration: none;
+    color: #FFF;
 }
+
+.section-hero {
+    display: flex;
+}
+
+.hero-img-block {
+    margin-left: -42px;
+}
+
+.hero-img-block img {
+    width: 729px;
+    height: 626px;
+}
+
+.header-hamburger-div {
+    display: none;
+    margin-right: 25px;
+    z-index: 10001;
+}
+
+.hero-title {
+    color: #2D314D;
+    margin-top: 120px;
+    font-size: 3rem;
+    font-weight: 300;
+    width: 490px;
+}
+
+.hero-description {
+    color: #9698A6;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 27px;
+    margin-top: 17px;
+    max-width: 360px;
+}
+
+button-second {
+    display: inline-flex;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #31D35C 0%, #2BB7DB 100%);
+    margin-top: 30px;
+}
+
+.hero-textblock-button {
+    margin-top: 45px;
+}
+
+.hero-textblock-button a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.section-features {
+    background: #F3F4F6;
+    top: 770px;
+    height: auto;
+    padding: 96px 24px;
+
+}
+
+.section-features-block {
+    max-width: 1110px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.feature-content-title {
+    color: #2D314D;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 42px;
+}
+
+.feature-content-description {
+    color: #9698A6;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 27px;
+    width: 544px;
+    margin-top: 40px;
+}
+
+
+
+.icons-feature-content {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons-svg {
+    width: 72px;
+    height: 72px;
+}
+
+.icons-title {
+    color: #2D314D;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 28px;
+    margin-top: 40px;
+}
+
+.icons-description {
+    color: #9698A6;
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 21px;
+    width: 210px;
+    margin-top: 20px;
+}
+
+
+.section-articles {
+    background: #FAFAFA;
+    height: auto;
+    padding: 96px 24px;
+}
+
+.section-articles-block {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.article-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.articles-title {
+    color: #2D314D;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 42px;
+    
+}
+
+.article-item {
+    display: flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.10);
+    margin-top: 40px;
+}
+
+.article-item-img img {
+    width: 243px;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.article-item-name {
+    padding: 17px 25px 1px 25px;
+    color: #9698A6;
+    font-size: 0.700rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 13px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.article-item-textblock-one {
+    display: flex;
+    width: 185px;
+    height: 40.41px;
+    color: #2D314D;
+    font-size: 1.0700rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 21px;
+    padding: 9px 0px 0px 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.article-item-textblock-two {
+    width: 208px;
+    height: 66px;
+    color: #9698A6;
+    font-size: 0.8100rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 17px;
+    padding: 10px 0px 30px 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+footer {
+    flex-shrink: 0;
+    background: #2D314D;
+    height: auto;
+}
+
+.container-footer {
+    max-height: 200px;
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-footer-links {
+    display: flex;
+    padding: 8px 0px 9px 0px;
+    flex-direction: column;
+    color: #FFF;
+    font-size: 15px;
+    line-height: 2.10938rem;
+}
+
+.container-footer-first-column {
+    line-height: 50px;
+    margin-top: 38px;
+}
+
+.container-footer-links-second {
+    display: flex;
+    padding: 8px 0px 9px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 34px;
+}
+
+.container-footer-easybank {
+    display: flex;
+    width: 200px;
+    height: 37px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #9698A6;
+    text-align: center;
+    font-size: 0.8000rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 17px;
+}
+
+.container-footer-four-column {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 38px;
+}
+
+.container-footer-second-column {
+    margin-top: 25px;
+}
+
+.container-footer-three-column {
+    margin-top: 25px;
+}
+
+.container-footer-first-column-icons {
+    line-height: 60px;
+}
+
+.container-footer-first-column-icons img {
+    margin-right: 18px;
+}
+
+.container-footer-links a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.container-footer-links-second a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.hero-img-block-mobile {
+    display: none;
+
+}
+
+/* 1. Поменять названия классов, сделать их более адекватными. Например: article-item-one-claire-robinson - гавно. article-item - норм.
+   2. Используй семантическую верстку. Если тайтл - h1-h6, если текст - p, span
+   3. Форматируй чаще код: Ctrl + Shift + F
+   4. Почитай и имплементируй в свой код DRY
+   5. Не надо задавать всему ширину и высоту. Минимум хардкода.  */
